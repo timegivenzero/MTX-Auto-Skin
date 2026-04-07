@@ -1,0 +1,13 @@
+# Menu Plugin Configuration
+
+# Port for the web UI inventory (must not conflict with server ports)
+uiPort: 8081
+
+# Port for the auto-skin configurator
+autoSkinPort: 8082
+
+# Whether to auto-open the browser on /menu
+autoOpenBrowser: true
+
+# Menu title shown in the UI
+menuTitle: "Server Menu"

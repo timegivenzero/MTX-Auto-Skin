@@ -1,0 +1,25 @@
+{
+  "3": {
+    "modelName": "SurvivorMale_Chest_Shirt_PoloLongSleeve.adr",
+    "textureAlias": "Default",
+    "effectId": 0,
+    "tintAlias": "",
+    "decalAlias": "#",
+    "shaderParamGroup": [
+      {
+        "SHADER_SEMANTIC_ID": 930
+      },
+      {
+        "SHADER_SEMANTIC_ID": 931
+      }
+    ]
+  },
+  "7": {
+    "modelName": "Weapon_Empty.adr",
+    "textureAlias": "",
+    "effectId": 0,
+    "tintAlias": "",
+    "decalAlias": "#",
+    "shaderParamGroup": []
+  }
+}
