@@ -14,6 +14,29 @@
       }
     ]
   },
+  "4": {
+    "modelName": "SurvivorMale_Legs_Pants_StraightLeg.adr",
+    "textureAlias": "Default",
+    "effectId": 0,
+    "tintAlias": "",
+    "decalAlias": "#",
+    "shaderParamGroup": [
+      {
+        "SHADER_SEMANTIC_ID": 1239
+      },
+      {
+        "SHADER_SEMANTIC_ID": 1240
+      }
+    ]
+  },
+  "5": {
+    "modelName": "SurvivorMale_Feet_Conveys_Tintable.adr",
+    "textureAlias": "green",
+    "effectId": 0,
+    "tintAlias": "",
+    "decalAlias": "#",
+    "shaderParamGroup": []
+  },
   "7": {
     "modelName": "Weapon_Empty.adr",
     "textureAlias": "",

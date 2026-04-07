@@ -131,6 +131,7 @@ class ServerPlugin extends pluginmanager_js_1.BasePlugin {
         console.log(`[SkinPlugin] ${this.mtxMap.size} MTX skin mappings loaded`);
         this.loadPersistedSkins();
         this.hookAppearance(server);
+        this.hookRespawn(server);
     }
     // ----------------------------------------------------------
     // Persistence
@@ -243,6 +244,26 @@ class ServerPlugin extends pluginmanager_js_1.BasePlugin {
             }
             return result;
         };
+    }
+    // ----------------------------------------------------------
+    // Respawn hook - applies skin after player respawns
+    // ----------------------------------------------------------
+    hookRespawn(server) {
+        const plugin = this;
+        // Hook into OnPlayerRespawned to auto-apply skins after respawn
+        server.hookManager.hook("OnPlayerRespawned", (client) => {
+            const charName = plugin.getCharName(client);
+            const skin = plugin.savedSkins[charName];
+            if (!skin) {
+                console.log(`[SkinPlugin] No saved skin for ${charName}, skipping auto-apply on respawn`);
+                return;
+            }
+            console.log(`[SkinPlugin] Auto-applying skin for ${charName} on respawn`);
+            // Apply skin to equipment directly
+            plugin.applyEquipment(client, skin);
+            // Force appearance update to all clients
+            plugin.sendFullAppearance(client, server);
+        });
     }
     findItemDefForModel(modelName) {
         for (const [idStr, def] of Object.entries(this.allItems)) {
