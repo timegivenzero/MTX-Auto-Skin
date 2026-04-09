@@ -1,41 +1,35 @@
 {
   "3": {
-    "modelName": "SurvivorMale_Chest_Shirt_PoloLongSleeve.adr",
-    "textureAlias": "Default",
+    "modelName": "SurvivorMale_Chest_Shirt_TintTshirt.adr",
+    "textureAlias": "",
     "effectId": 0,
     "tintAlias": "",
     "decalAlias": "#",
     "shaderParamGroup": [
       {
-        "SHADER_SEMANTIC_ID": 930
+        "SHADER_SEMANTIC_ID": 736
       },
       {
-        "SHADER_SEMANTIC_ID": 931
+        "SHADER_SEMANTIC_ID": 737
       }
-    ]
+    ],
+    "skinItemDefId": 3135
   },
   "4": {
-    "modelName": "SurvivorMale_Legs_Pants_StraightLeg.adr",
-    "textureAlias": "Default",
+    "modelName": "SurvivorMale_Legs_Pants_Leggings.adr",
+    "textureAlias": "",
     "effectId": 0,
     "tintAlias": "",
     "decalAlias": "#",
     "shaderParamGroup": [
       {
-        "SHADER_SEMANTIC_ID": 1239
+        "SHADER_SEMANTIC_ID": 744
       },
       {
-        "SHADER_SEMANTIC_ID": 1240
+        "SHADER_SEMANTIC_ID": 745
       }
-    ]
-  },
-  "5": {
-    "modelName": "SurvivorMale_Feet_Conveys_Tintable.adr",
-    "textureAlias": "green",
-    "effectId": 0,
-    "tintAlias": "",
-    "decalAlias": "#",
-    "shaderParamGroup": []
+    ],
+    "skinItemDefId": 3131
   },
   "7": {
     "modelName": "Weapon_Empty.adr",
@@ -43,6 +37,23 @@
     "effectId": 0,
     "tintAlias": "",
     "decalAlias": "#",
-    "shaderParamGroup": []
+    "shaderParamGroup": [],
+    "skinItemDefId": 85
+  },
+  "100": {
+    "modelName": "SurvivorMale_Armor_FootballPads_Spiked.adr",
+    "textureAlias": "",
+    "effectId": 0,
+    "tintAlias": "",
+    "decalAlias": "#",
+    "shaderParamGroup": [
+      {
+        "SHADER_SEMANTIC_ID": 728
+      },
+      {
+        "SHADER_SEMANTIC_ID": 729
+      }
+    ],
+    "skinItemDefId": 3126
   }
 }
